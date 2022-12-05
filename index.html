@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modos Gregos</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+
+    <body>
+        <section class="main">
+            
+            <h1>Escolha a escala</h1>
+
+            <div class="botoesEscala">
+                <button class="button" onclick="callEscala('C')">C</button>
+                <button class="button" onclick="callEscala('Db')">Db</button>
+                <button class="button" onclick="callEscala('D')">D</button>
+                <button class="button" onclick="callEscala('Eb')">Eb</button>
+                <button class="button" onclick="callEscala('E')">E</button>
+                <button class="button" onclick="callEscala('F')">F</button>
+                <button class="button" onclick="callEscala('Gb')">Gb</button>    
+                <button class="button" onclick="callEscala('G')">G</button>    
+                <button class="button" onclick="callEscala('Ab')">Ab</button>    
+                <button class="button" onclick="callEscala('A')">A</button>    
+                <button class="button" onclick="callEscala('Bb')">Bb</button>    
+                <button class="button" onclick="callEscala('B')">B</button>    
+            </div>
+
+            <div class="content">
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Jônio</p>
+                    </div>
+
+                    <div class="tabela" id="jonio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Dórico</p>
+                    </div>
+
+                    <div class="tabela" id="dorico" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Frígio</p>
+                    </div>
+
+                    <div class="tabela" id="frigio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Lídio</p>
+                    </div>
+
+                    <div class="tabela" id="lidio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Mixolídio</p>
+                    </div>
+
+                    <div class="tabela" id="mixolidio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Eólio</p>
+                    </div>
+
+                    <div class="tabela" id="eolio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="modos" >
+                    <div class="nome">
+                        <p>Lócrio</p>
+                    </div>
+
+                    <div class="tabela" id="locrio" > 
+                        <!-- <div class='classificacao'>    
+                            <p></p>    
+                        </div> -->
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </section>
+
+        <!-- <script src="js/script.js"></script> -->
+
+        <script src="js/ModosClass.js"></script>
+
+        <script>
+            function callEscala(nota){
+                var jonio = new Jonio(nota)
+                var dorico = new Dorico(nota)
+                var frigio = new Frigio(nota)
+                var lidio = new Lidio(nota)
+                var mixolidio = new Mixolidio(nota)
+                var eolio = new Eolio(nota)
+                var locrio = new Locrio(nota)
+            }
+        </script>
+    </body>
+
+</html>
